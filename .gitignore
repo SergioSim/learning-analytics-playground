@@ -10,3 +10,9 @@ data/
 
 # Sources
 src/
+
+# End-to-end testing
+e2e/cypress/plugins
+e2e/cypress/support
+e2e/cypress/videos
+e2e/cypress/screenshots

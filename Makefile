@@ -40,6 +40,12 @@ clean-db:  ## remove LMS databases
 	$(COMPOSE) rm edx_mongodb edx_mysql edx_redis 
 .PHONY: clean-db
 
+e2e-tests:\
+	run
+e2e-tests: ## run end-to-end tests
+	docker-compose -f docker-compose.cypress.yml up
+.PHONY: e2e-tests
+
 logs:  ## get development logs
 	$(COMPOSE) logs -f
 .PHONY: logs

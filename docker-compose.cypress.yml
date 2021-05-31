@@ -1,0 +1,8 @@
+version: "3.5"
+services:
+  cypress:
+    image: "cypress/included:4.0.2"
+    working_dir: /e2e
+    network_mode: host
+    volumes:
+      - ./e2e:/e2e
